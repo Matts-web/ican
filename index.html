@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link class="lead rounded-circle" rel="shortcut icon" type="logo" href="/img/logo2.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a01a41ce47.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Inuana Community Action Network</title>
+</head>
+<style>
+    body {
+        background-color: rgba(227, 227, 221, 0.989);
+    }
+
+    .thematic {
+        border-style: solid;
+        border-color: rgb(31, 32, 29);
+        border-spacing: 10em;
+        border-radius: 5rem;
+        background-color: blanchedalmond;
+        text-decoration-color: black;
+    }
+</style>
+
+<body>
+    <!-- header navs-->
+    <nav class="navbar sticky-top mb-5 text-light navbar-expand-lg py-3" style="background-color: #b8b44e;">
+        <div class="container text-light">
+            <img src="/img/logo2.png" width="80" style="border-radius: 5px;" alt="">
+            <a href="#" class="navbar-brand "><span></span></a>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav nav-underline ms-auto fw-bold">
+                    <li><a class="nav-link" href="./pages/home.html">Home</a></li>
+                    <li><a class="nav-link" href="./pages/about.html">About Us</a></li>
+                    <li><a class="nav-link" href="./pages/projects.html">What We Do</a></li>
+                    <li><a class="nav-link" href="./pages/stories.html">Our Stories</a></li>
+                    <li><a class="nav-link" href="./pages/careers.html">Get Involved</a></li>
+                    <li><a class="nav-link" href="./pages/downloads.html">Resources</a></li>
+                    <li><a class="nav-link" href="./pages/contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <!-- end nav -->
+    <!-- canvas -->
+    <button class="btn btn-primary ms-2 mt-5" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"
+        style="background-color: #3a3535; border-style: none;">Contact ICAN</button>
+
+    <div class="offcanvas offcanvas-start" style="background-color: #b8b44e;" data-bs-scroll="true" tabindex="-1"
+        id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Contact Us</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <form>
+                <div class="row mb-3">
+                    <label for="inputname3" class="col-sm-2 col-form-label">Name</label>
+                    <div class="col-sm-3 col-md-5 col-lg-6">
+                        <input type="name" class="form-control" id="inputname3">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-3 col-md-5 col-lg-6">
+                        <input type="email" class="form-control" id="inputemail">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary ms-10 col-sm-3">Submit</button>
+            </form>
+        </div>
+        <div class="links ms" style="margin: 5px 20px; display:inline-flex;">
+            <h1><a href="#"><i class="bi bi bi-twitter text-dark mx-1"></i></a></h1>
+            <h1> <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a></h1>
+
+        </div>
+    </div>
+    <!-- canvas -->
+
+    <!-- carousel -->
+    <section>
+        <div class="conatiner md p-5 mt-0 mb-0">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="img/femride.jpg" class="d-block w-100" alt="femicide ride">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="img/office pic.jpg" class="d-block w-100" alt="office picture">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/pose.jpg" class="d-block w-100" alt="post tree planting">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/planting.jpg" class="d-block w-100" alt="tree planting">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/condom.jpg" class="d-block w-100" alt="safety">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- carousel -->
+
+    </section>
+    <!-- boxes -->
+    <section class="p-5">
+        <div class="thematic" style="background-color: #b8b44e; padding: auto; text-decoration: #3a3535;">
+            <p class="link text-dark text-center mt-5 mb-5">
+                <a href="/pages/about.html" class="fw-bold text-decoration-none">THEMATIC AREAS</a>
+            </p>
+        </div>
+    </section>
+
+    <section id="pads" class="p-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md">
+                    <img src="/img/pads.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-md p-5">
+                    <h3>Health Projects </h3>
+                    <p>ICAN is committed to improving community health through comprehensive education programs and
+                        accessible healthcare services. From health education workshops to partnerships with healthcare
+                        providers, we strive to promote wellbeing and prevent diseases. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="p-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md p-5">
+                    <h3>Environmental Conservation</h3>
+                    <p> Our conservation initiatives focus on sustainable practices like tree planting and environmental
+                        education. By safeguarding natural resources, we aim to ensure a healthy environment for future
+                        generations</p>
+                </div>
+                <div class="col-md">
+                    <img src="/img/gabbage.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="" class="p-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md">
+                    <img src="/img/wetlands.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-md p-5">
+                    <h3>Community Empowerment</h3>
+                    <p>Through project formulation and implementation, ICAN supports economic development and social
+                        cohesion. We empower individuals with skills training, income-generating projects, and awareness
+                        campaigns to foster self-sufficiency and resilience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="values bg-secondary p-5 mt-5 mb-5">
+        <div class="container-md">
+            <div class="row justify-content-between">
+                <div>
+                    <h3 class="values text-center mb-5">Our Values</h3>
+                </div>
+                <div class="col">
+                    <h4>Inclusivity</h4>
+                    <p> The organization aims to be open and accessible to all eligible individuals
+                        residing within the community, fostering a commitment to inclusivity and community
+                        engagement.</p>
+                </div>
+                <div class="col">
+                    <h4>Diversity</h4>
+                    <p>ICAN recognizes the importance of diversity in its activities and encourages
+                        participation from members of different backgrounds.</p>
+                </div>
+                <div class="col">
+                    <h4>Equity</h4>
+                    <p>The organization strives to ensure fairness and equal opportunities for all
+                        members in its decision-making processes and activities.</p>
+                </div>
+                <div class="col">
+                    <h4>Access</h4>
+                    <p>ICAN aims to provide diverse resources that promote self-sufficiency and
+                        foster community and economic development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- team -->
+    <section id="team" class="p-5 text-light" style="background-color: #3a3535;">
+        <div class="container-md">
+            <h3 class="text-center text-white">Our Team</h3>
+            <p class="lead text-center text-white mb-5">
+                Our team leaders who are passionate in building a empowered community
+            </p>
+            <div class="row col-sm justify-content-between">
+                <div class="col">
+                    <div class="card bg-light">
+                        <div class="card-body text-dark text-center">
+                            <img src="/img/frank.jpg" width="100px" alt="" class="rounded-circle mb-3">
+                            <h5 class="card-title mb-3">Frank Ochieng</h5>
+                            <p class="card-text">We are committed to driving positive change through diverse community
+                                projects and initiatives.</p>
+                            <p class="fw-bold">Program Manager</p>
+                            <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi bi-tiktok text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card bg-light">
+                        <div class="card-body text-dark text-center">
+                            <img src="/img/ben.jpg" width="100px" alt="" class="rounded-circle mb-3">
+                            <h5 class="card-title mb-3">Ben Otieno</h5>
+                            <p class="card-text">Let's work together to build a stronger, more vibrant community.
+                                Together, we can achieve great things at ICAN.</p>
+                            <p class="fw-bold">M & E Officer</p>
+                            <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi bi-tiktok text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card bg-light">
+                        <div class="card-body text-dark text-center">
+                            <img src="/img/grace.jpg" width="100px" alt="" class="rounded-circle mb-3">
+                            <h5 class="card-title mb-3">Grace Onyango</h5>
+                            <p class="card-text">Join us in our mission for a healthier, more prosperous
+                                community. Your
+                                involvement makes a difference.</p>
+                            <p class="fw-bold">Operations Manager</p>
+                            <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi bi-tiktok text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card bg-light">
+                        <div class="card-body text-dark text-center">
+                            <img src="/img/matt.jpg" width="100px" alt="" class="rounded-circle mb-3">
+                            <h5 class="card-title mb-3">Mathews Agumba</h5>
+                            <p class="card-text">Join us in our mission for a healthier, more prosperous
+                                community. Your
+                                involvement makes a difference.</p>
+                            <p class="fw-bold">Data Manager</p>
+                            <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi bi-tiktok text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card bg-light">
+                        <div class="card-body text-dark text-center">
+                            <img src="/img/collince.jpg" width="100px" alt="" class="rounded-circle mb-3">
+                            <h5 class="card-title mb-3">Collince Ochieng</h5>
+                            <p class="card-text">Join us in our mission for a healthier, more prosperous
+                                community. Your
+                                involvement makes a difference.</p>
+                            <p class="fw-bold">Project Officer</p>
+                            <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi bi-tiktok text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- newsletter -->
+    <section class="text-dark p-5" style="background-color: #b8b44e;">
+        <div class="container-md">
+            <div class="d-md-flex justify-content-between align-items-center">
+                <h3 class="mb-3 mb-md-0">Sign Up for our Newsletter</h3>
+
+                <div class="input-group news-input">
+                    <input type="text" class="form-control" placeholder="Enter email" aria-label="Recipient's username"
+                        aria-describedby="button-addon2">
+                    <button class="btn btn-dark btn-lg" type="button">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end newsletter -->
+
+
+
+    <footer class="text-light mb-0 p-2 g-5" style="background-color: #3a3535;">
+        <div class="container-fluid">
+            <h2 class="p-5 mt-5 mb-5 text-center lead">Empowering rural communities for a brighter tomorrow
+            </h2>
+            <div class="row justify-content-between">
+                <div class="col-sm ms-5">
+                    <h4 class="link">About Us</h4>
+                    <ul class="navbar-nav text-left ms-auto">
+                        <li><a class="nav-link" href="#">History</a></li>
+                        <li><a class="nav-link" href="#">Our Team</a></li>
+                        <li><a class="nav-link" href="#">Blog</a></li>
+                        <li><a class="nav-link" href="./pages/projects.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm">
+                    <h4 class="link">Our Impact</h4>
+                    <ul class="navbar-nav text-left ms-auto">
+                        <li><a class="nav-link" href="./pages/about.html">Population Coverarge</a></li>
+                        <li><a class="nav-link" href="./pages/projects.html">Tracking Our Impact</a></li>
+                        <li><a class="nav-link" href="./pages/downloads.html">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm">
+                    <h4 class="link">Programs</h4>
+                    <ul class="navbar-nav text-left ms-auto">
+                        <li><a class="nav-link" href="#">Our Approach</a></li>
+                        <li><a class="nav-link" href="#">Where We Work</a></li>
+                        <li><a class="nav-link" href="#">Projects</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm">
+                    <h4 class="link">Get Involved</h4>
+                    <ul class="navbar-nav text-left ms-auto">
+                        <li><a class="nav-link" href="#">Volunteer</a></li>
+                        <li><a class="nav-link" href="#">Partner With Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm">
+                    <h4 class="link">Connect</h4>
+                    <ul class="navbar-nav text-left ms-auto">
+                        <li><a class="nav-link" href="facebook.com/">Facebook</a></li>
+                        <li><a class="nav-link"
+                                href="https://www.instagram.com/inuanacommunityactionnetwork?igsh=MXpkemY2Z3Zhc2M1"
+                                target="_blank">Instagram</a></li>
+                        <li><a class="nav-link" href="https://www.tiktok.com/@inuana23?_t=8nMH3HHB94I&_r=1"
+                                target="_blank">Tiktok</a></li>
+                        <li><a class="nav-link" href="mailto:inuanainfolink@gmail.com" target="_blank">Email</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright text-center mt-2 mb-0 p-5">
+                <span>&copy 2024 INUANA COMMUNITY ACTION NETWORK | All Rights Reserved</span>
+            </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
